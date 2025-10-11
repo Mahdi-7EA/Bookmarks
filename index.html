@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Bookmark Page</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Interactive Bookmark Page</h1>
+    </header>
+
+    <main>
+        <div class="controls">
+            <input type="text" id="searchBar" class="search-bar" placeholder="Search bookmarks...">
+            <div class="category-buttons">
+                <button class="category-btn active" data-category="all">All</button>
+                <button class="category-btn" data-category="ftp">FTP</button>
+                <button class="category-btn" data-category="movies">Movies</button>
+                <button class="category-btn" data-category="anime">Anime</button>
+                <button class="category-btn" data-category="dramas">Dramas</button>
+            </div>
+        </div>
+
+        <div class="link-list">
+            <div class="category" data-category="ftp">
+                <h2 class="category-title">FTP Servers</h2>
+                <ul>
+                    <li><a href="http://10.16.100.244/" target="_blank">ICC FTP SERVER</a></li>
+                    <li><a href="http://circleftp.net/" target="_blank">Circle Network</a></li>
+                </ul>
+            </div>
+            <div class="category" data-category="movies">
+                <h2 class="category-title">Movies</h2>
+                <ul>
+                    <li><a href="https://moviebox.ph/" target="_blank">MovieBox</a></li>
+                    <li><a href="https://myflixerz.to/" target="_blank">MyFlixer</a></li>
+                    <li><a href="https://www.hindilinks4u.today/" target="_blank">Hindilinks4u.today</a></li>
+                    <li><a href="https://www.7starhd.broker/" target="_blank">7starhd.com</a></li>
+                    <li><a href="https://bolly4u.gold/" target="_blank">Bolly4u.org</a></li>
+                    <li><a href="https://ww4.fmovies.co/24/" target="_blank">Fmovies</a></li>
+                    <li><a href="https://9xflix.mov/" target="_blank">9xflix.com</a></li>
+                    <li><a href="https://vegamovies.tl/" target="_blank">Vegamovies</a></li>
+                    <!-- <li><a href="https://moviesmod.cash/" target="_blank">MoviesMod.bet</a></li> -->
+                    <!-- <li><a href="https://multimovies.today/" target="_blank">Multimovies</a></li> -->
+                </ul>
+            </div>
+            <div class="category" data-category="anime">
+                <h2 class="category-title">Anime</h2>
+                <ul>
+                    <li><a href="https://toonworld4all.me/" target="_blank">ToonWorld4All</a></li>
+                    <li><a href="https://www.rareanimes.co/" target="_blank">RareToons</a></li>
+                    <li><a href="https://pikahd.com/" target="_blank">PikaHD</a></li>
+                    <!-- <li><a href="https://gokutv.pics/" target="_blank">GOKU</a></li>
+                    <li><a href="https://animedekho.net/" target="_blank">AnimeDekho</a></li>
+                    <li><a href="https://www.toonshub.xyz/" target="_blank">ToonsHub</a></li>
+                    <li><a href="https://gogoanime.co.at/" target="_blank">Gogoanime</a></li>
+                    <li><a href="https://toonstream.co/" target="_blank">Toonstream</a></li> -->
+                </ul>
+            </div>
+            <div class="category" data-category="dramas">
+                <h2 class="category-title">Dramas</h2>
+                <ul>
+                    <li><a href="https://katdrama.com/" target="_blank">KatDrama</a></li>
+                    <li><a href="https://kdramasmaza.net/" target="_blank">KDramas Maza</a></li>
+                    <li><a href="https://www.kdhindidubbed.blog/" target="_blank">KDHindiDubbed</a></li>
+                </ul>
+            </div>
+            <div class="no-results" style="display: none;">No bookmarks found.</div>
+        </div>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
